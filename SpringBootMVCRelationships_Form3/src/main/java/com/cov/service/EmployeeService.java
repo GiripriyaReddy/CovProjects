@@ -32,14 +32,14 @@ public class EmployeeService {
 
 	}
 
-	public Employee save(Employee employee) throws InvalidEmployeeIdException {
+	public Employee save(Employee employee) {
 
 		return employeeRepository.save(employee);
 
 	}
 
 	public Employee update(Employee employee) throws InvalidEmployeeIdException {
-		Optional<Employee> empOptional = employeeRepository.findById( employee.getId());
+		Optional<Employee> empOptional = employeeRepository.findById(employee.getId());
 		if (!empOptional.isPresent()) {
 			throw new InvalidEmployeeIdException("Employee Id" + employee.getId() + "not existing in reposiotory");
 		}

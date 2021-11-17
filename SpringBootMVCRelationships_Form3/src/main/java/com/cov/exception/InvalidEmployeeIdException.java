@@ -7,8 +7,6 @@ public class InvalidEmployeeIdException extends Exception {
 		// TODO Auto-generated constructor stub
 	}
 
-
-
 	public InvalidEmployeeIdException(String message, Throwable cause) {
 		super(message, cause);
 		// TODO Auto-generated constructor stub
@@ -23,6 +21,5 @@ public class InvalidEmployeeIdException extends Exception {
 		super(cause);
 		// TODO Auto-generated constructor stub
 	}
-
 
 }
