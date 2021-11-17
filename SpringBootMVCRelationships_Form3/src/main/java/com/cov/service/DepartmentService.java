@@ -18,9 +18,8 @@ public class DepartmentService {
 	DepartmentRepository departmentRepository;
 
 	public List<Department> findAll() {
-// List<Employee> employee=new ArrayList<Employee>();
+
 		return (List<Department>) departmentRepository.findAll();
-// return employee;
 
 	}
 
