@@ -27,6 +27,7 @@ public class App10 {
 		employees.add(new Employee("priya", 20));
 		employees.add(new Employee("hari", 10));
 		employees.add(new Employee("charan", 30));
+		System.out.println("hello");
 
 		session.getTransaction().begin();
 
