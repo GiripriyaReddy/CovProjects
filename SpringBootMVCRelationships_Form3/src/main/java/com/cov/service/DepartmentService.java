@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import com.cov.beans.Department;
 
 import com.cov.exception.InvalidDepartmentIdException;
-
 import com.cov.repo.DepartmentRepository;
 
 @Service
@@ -18,12 +17,13 @@ public class DepartmentService {
 	DepartmentRepository departmentRepository;
 
 	public List<Department> findAll() {
-
+// List<Employee> employee=new ArrayList<Employee>();
 		return (List<Department>) departmentRepository.findAll();
+// return employee;
 
 	}
 
-	public Department findById(Long id) throws InvalidDepartmentIdException {
+	public Department findById(int id) throws InvalidDepartmentIdException {
 		Optional<Department> deptOptional = departmentRepository.findById(id);
 		if (!deptOptional.isPresent()) {
 			throw new InvalidDepartmentIdException("Department Id " + id + " not existing in repository");
@@ -34,26 +34,26 @@ public class DepartmentService {
 
 	public Department save(Department department) {
 
-		return Department.save(department);
+		return departmentRepository.save(department);
 
 	}
 
-	public Department update(Department department, Object id) throws InvalidDepartmentIdException {
-		Optional<Department> deptOptional = Department.findById(department.getId(id));
+	public Department update(Department department) throws InvalidDepartmentIdException {
+		Optional<Department> deptOptional = departmentRepository.findById(department.getId());
 		if (!deptOptional.isPresent()) {
 			throw new InvalidDepartmentIdException(
-					"Department Id" + (department.getId() + "not existing in reposiotory"));
+					"Department Id" + department.getId() + "not existing in reposiotory");
 		}
-		return Department.save(department);
+		return departmentRepository.save(department);
 	}
 
 	public Department delete(int id) throws InvalidDepartmentIdException {
-		Optional<Department> deptOptional = Department.findById(id);
+		Optional<Department> deptOptional = departmentRepository.findById(id);
 		if (!deptOptional.isPresent()) {
 			throw new InvalidDepartmentIdException("Department Id " + id + "not existing in repository");
 		}
 		Department department = deptOptional.get();
-		Department.deleteById(id);
+		departmentRepository.deleteById(id);
 		return department;
 	}
 }

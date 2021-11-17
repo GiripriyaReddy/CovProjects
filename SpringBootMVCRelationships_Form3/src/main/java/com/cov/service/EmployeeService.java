@@ -12,17 +12,18 @@ import com.cov.repo.EmployeeRepository;
 
 @Service
 public class EmployeeService {
+
 	@Autowired
 	EmployeeRepository employeeRepository;
 
 	public List<Employee> findAll() {
-		// List<Employee> employee=new ArrayList<Employee>();
+// List<Employee> employee=new ArrayList<Employee>();
 		return (List<Employee>) employeeRepository.findAll();
-		// return employee;
+// return employee;
 
 	}
 
-	public Employee findById(Long id) throws InvalidEmployeeIdException {
+	public Employee findById(int id) throws InvalidEmployeeIdException {
 		Optional<Employee> empOptional = employeeRepository.findById(id);
 		if (!empOptional.isPresent()) {
 			throw new InvalidEmployeeIdException("Employee Id " + id + " not existing in repository");
@@ -31,28 +32,28 @@ public class EmployeeService {
 
 	}
 
-	public Employee save(Employee employee) {
+	public Employee save(Employee employee) throws InvalidEmployeeIdException {
 
 		return employeeRepository.save(employee);
 
 	}
 
 	public Employee update(Employee employee) throws InvalidEmployeeIdException {
-		Optional<Employee> empOptional = employeeRepository.findById(employee.getId());
+		Optional<Employee> empOptional = employeeRepository.findById( employee.getId());
 		if (!empOptional.isPresent()) {
-			throw new InvalidEmployeeIdException("Employee ID" + employee.getId() + "not existing in repository");
+			throw new InvalidEmployeeIdException("Employee Id" + employee.getId() + "not existing in reposiotory");
 		}
 		return employeeRepository.save(employee);
 	}
 
-	public Employee delete(Long id) throws InvalidEmployeeIdException {
+	public Employee delete(int id) throws InvalidEmployeeIdException {
 		Optional<Employee> empOptional = employeeRepository.findById(id);
 		if (!empOptional.isPresent()) {
-			throw new InvalidEmployeeIdException("Employee ID" + id + "not existing in repository");
+			throw new InvalidEmployeeIdException("Employee Id" + id + "not existing in repository");
 		}
 		Employee employee = empOptional.get();
 		employeeRepository.deleteById(id);
 		return employee;
-
 	}
+
 }

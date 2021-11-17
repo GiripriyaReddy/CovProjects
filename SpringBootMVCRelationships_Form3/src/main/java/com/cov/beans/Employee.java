@@ -10,45 +10,32 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Employee {
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", deptno=" + deptno + "]";
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
-	private String name;
-	private long deptno;
-	
-	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "deptno", nullable = false)
-	
-	Department department;
-	public Employee() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	int id;
+	String name;
 
-	public Employee(long id, String name, long deptno) {
+	@ManyToOne(fetch = FetchType.LAZY, optional = false)
+// @JoinColumn(name = "departmentid", nullable = false)
+	Department department;
+
+	public Employee(int id, String name, Department department) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.deptno = deptno;
-	}
-	
-	
-	public Employee(String name, int deptno) {
-		super();
-		this.name = name;
-		this.deptno = deptno;
+		this.department = department;
 	}
 
-	public long getId() {
+	public Employee() {
+		super();
+// TODO Auto-generated constructor stub
+	}
+
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -60,12 +47,17 @@ public class Employee {
 		this.name = name;
 	}
 
-	public long getDeptno() {
-		return deptno;
+	public Department getDepartment() {
+		return department;
 	}
 
-	public void setDeptno(long deptno) {
-		this.deptno = deptno;
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", department=" + department + "]";
 	}
 
 }
