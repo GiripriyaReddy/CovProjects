@@ -1,5 +1,6 @@
 package com.cov.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,7 +18,7 @@ public class DepartmentService {
 	DepartmentRepository departmentRepository;
 
 	public List<Department> findAll() {
-// List<Employee> employee=new ArrayList<Employee>();
+		List<Department> department = new ArrayList<Department>();
 		return (List<Department>) departmentRepository.findAll();
 // return employee;
 
@@ -56,4 +57,5 @@ public class DepartmentService {
 		departmentRepository.deleteById(id);
 		return department;
 	}
+
 }

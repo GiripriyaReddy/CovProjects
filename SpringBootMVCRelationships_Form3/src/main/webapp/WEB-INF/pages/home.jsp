@@ -4,12 +4,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Home</title>
+<title>Home Page</title>
 </head>
 <body>
-	<h2>Welcome to Employee Management System</h2>
+<h2>Employee Management System</h2>
+	<a href="regEmp">Employee registration</a>
 	<br>
 	<br>
-
+	<a href="getEmp">Employee List</a><br><br>
+	<br>
+	<a href="getDept">Department List</a><br><br>
+	
 </body>
 </html>
