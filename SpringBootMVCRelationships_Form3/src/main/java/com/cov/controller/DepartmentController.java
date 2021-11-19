@@ -41,12 +41,12 @@ public class DepartmentController {
 	public ModelAndView editDept(@RequestParam int id) throws InvalidDepartmentIdException {
 		Department deptToEdit = departmentService.findById(id);
 		System.out.println("Department to edit : " + deptToEdit);
-		ModelAndView modelAndView = new ModelAndView("editDept", "deptToEdit", deptToEdit);
+		ModelAndView modelAndView = new ModelAndView("editDepartment", "deptToEdit", deptToEdit);
 		// System.out.println("ModelAndView : " + modelAndView);
 		return modelAndView;
 	}
 
-	@RequestMapping(value = "updateDeptartment", method = RequestMethod.POST)
+	@RequestMapping(value = "updateDepartment", method = RequestMethod.POST)
 	public ModelAndView updateDept(@ModelAttribute("deptToEdit") Department department)
 			throws InvalidDepartmentIdException {
 		departmentService.update(department);

@@ -29,8 +29,6 @@ public class EmployeeController {
 
 	@RequestMapping(value = "regEmp", method = RequestMethod.POST)
 	public ModelAndView saveEmployee(@ModelAttribute Employee emp) throws InvalidEmployeeIdException {
-		System.out.println("Employee to be inserted : " + emp);
-		System.out.println("Department : " + emp.getDepartment());
 		ModelAndView modelAndView = new ModelAndView("redirect:getEmp");
 		modelAndView.addObject("emp", employeeService.save(emp));
 		return modelAndView;
@@ -45,8 +43,7 @@ public class EmployeeController {
 	@RequestMapping(value = "editEmp", method = RequestMethod.GET)
 	public ModelAndView editEmp(@RequestParam int id) throws InvalidEmployeeIdException {
 		Employee empToEdit = employeeService.findById(id);
-		System.out.println("Employee to edit : " + empToEdit);
-		ModelAndView modelAndView = new ModelAndView("editEmp", "empToEdit", empToEdit);
+		ModelAndView modelAndView = new ModelAndView("editEmployee", "empToEdit", empToEdit);
 		//System.out.println("ModelAndView : " + modelAndView);
 		return modelAndView;
 	}
@@ -55,7 +52,7 @@ public class EmployeeController {
 	public ModelAndView updateEmployee(@ModelAttribute("empToEdit") Employee employee)
 			throws InvalidEmployeeIdException {
 		employeeService.update(employee);
-		ModelAndView modelAndView = new ModelAndView("redirect:getEmp");
+		ModelAndView modelAndView = new ModelAndView("redirect:"+ "getEmp");
 		return modelAndView;
 	}
 

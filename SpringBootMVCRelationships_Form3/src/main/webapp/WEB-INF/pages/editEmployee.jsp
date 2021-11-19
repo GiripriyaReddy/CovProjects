@@ -23,11 +23,15 @@
 				<br>
 
 				<form:label path="department">Department</form:label>
-				<form:input path="department" readonly="true" />
-				<form:input path="department.name" readonly="true" />
-				<br>
-				<br>
-				<input type="submit" value="Update"/>
+				<form:select path="department">
+
+					<form:option value="0">---select---</form:option>
+					<form:option value="1"></form:option>
+					<form:option value="2"></form:option>
+					</form:select>
+					<br>
+					<br>
+					<input type="submit" value="Update" />
 			</tr>
 		</table>
 	</form:form>

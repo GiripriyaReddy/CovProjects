@@ -13,7 +13,7 @@
 	<br>
 	<br>
 	<a href="/">Home</a>
-	<a href="getDept">Show All Department</a>
+	<a href="getDept">showDepartment</a>
 </body>
 </html>
 
