@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.cov.beans.Department;
 import com.cov.beans.Employee;
+import com.cov.exception.InvalidDepartmentIdException;
 import com.cov.exception.InvalidEmployeeIdException;
 import com.cov.service.DepartmentService;
 import com.cov.service.EmployeeService;
@@ -32,15 +33,23 @@ public class EmployeeController {
 	}
 
 	@RequestMapping(value = "regEmp", method = RequestMethod.POST)
-	public ModelAndView saveEmployee(@ModelAttribute Employee emp) throws InvalidEmployeeIdException {
-		ModelAndView modelAndView = new ModelAndView("redirect:getEmp");
-		modelAndView.addObject("emp", employeeService.save(emp));
+	public ModelAndView saveEmployee(@ModelAttribute("employee") Employee employee) throws InvalidEmployeeIdException {
+		ModelAndView modelAndView = new ModelAndView("showEmployee");
+		employeeService.save(employee);
+		modelAndView.addObject("employees", employeeService.findAll());
 		return modelAndView;
 	}
 
-	@RequestMapping("getEmp")
-	public ModelAndView findEmployee() {
-		ModelAndView modelAndView = new ModelAndView("showEmployee", "emps", employeeService.findAll());
+	@RequestMapping(value="getEmp",method = RequestMethod.GET)
+	public ModelAndView findAll() throws InvalidEmployeeIdException {
+		ModelAndView modelAndView = new ModelAndView("showEmployee");
+		List<Employee> employees = employeeService.findAll();
+		List<Department> departments = departmentService.findAll();
+		modelAndView.addObject("employees", employees);
+		modelAndView.addObject("departments",departments);
+		modelAndView.addObject("departmentService",departmentService);
+		modelAndView.addObject("department",new Department());
+		modelAndView.addObject("employeeService", employeeService);
 		return modelAndView;
 	}
 
@@ -48,7 +57,9 @@ public class EmployeeController {
 	public ModelAndView editEmp(@RequestParam int id) throws InvalidEmployeeIdException {
 		Employee empToEdit = employeeService.findById(id);
 		ModelAndView modelAndView = new ModelAndView("editEmployee", "empToEdit", empToEdit);
-		// System.out.println("ModelAndView : " + modelAndView);
+		modelAndView.addObject("departmentService", departmentService);
+
+
 		return modelAndView;
 	}
 
@@ -65,5 +76,22 @@ public class EmployeeController {
 		employeeService.delete(id);
 		ModelAndView modelAndView = new ModelAndView("redirect:getEmp");
 		return modelAndView;
+	}
+	@RequestMapping(value = "getAllEmp", method = RequestMethod.POST)
+	public ModelAndView findAllEmployeeByDept(@RequestParam int deptid) throws InvalidDepartmentIdException {
+
+
+
+	ModelAndView modelAndView = new ModelAndView("empByDept");
+	modelAndView.addObject("departmentService", departmentService);
+	List<Employee> employees = employeeService.findAllByDeptno(deptid);
+	modelAndView.addObject("employees",employees);
+
+
+
+	return modelAndView;
+
+
+
 	}
 }

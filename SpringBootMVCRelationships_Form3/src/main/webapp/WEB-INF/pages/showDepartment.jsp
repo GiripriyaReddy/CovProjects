@@ -35,7 +35,7 @@
 	<a href="/">Home</a>
 	<br>
 	<br>
-	<a href="regDept">Register For Department</a>
+	<a href="regDept">Department Registration</a>
 </body>
 </html>
 
