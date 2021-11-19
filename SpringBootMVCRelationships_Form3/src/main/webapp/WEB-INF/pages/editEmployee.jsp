@@ -28,10 +28,11 @@
 					<form:option value="0">---select---</form:option>
 					<form:option value="1"></form:option>
 					<form:option value="2"></form:option>
-					</form:select>
-					<br>
-					<br>
-					<input type="submit" value="Update" />
+					<form:option value="3"></form:option>
+				</form:select>
+				<br>
+				<br>
+				<input type="submit" value="Update" />
 			</tr>
 		</table>
 	</form:form>
