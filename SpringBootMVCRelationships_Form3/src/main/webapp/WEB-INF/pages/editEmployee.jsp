@@ -33,6 +33,9 @@
 				<br>
 				<br>
 				<input type="submit" value="Update" />
+				<br>
+				<br>
+				<a href="/">Home</a>
 			</tr>
 		</table>
 	</form:form>

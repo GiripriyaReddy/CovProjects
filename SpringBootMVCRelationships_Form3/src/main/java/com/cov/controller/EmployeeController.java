@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.cov.beans.Department;
 import com.cov.beans.Employee;
 import com.cov.exception.InvalidEmployeeIdException;
 import com.cov.service.DepartmentService;
@@ -19,6 +21,8 @@ public class EmployeeController {
 	EmployeeService employeeService;
 	@Autowired
 	DepartmentService departmentService;
+
+	
 
 	@RequestMapping(value = "regEmp", method = RequestMethod.GET)
 	public ModelAndView newEmployee() {
@@ -44,7 +48,7 @@ public class EmployeeController {
 	public ModelAndView editEmp(@RequestParam int id) throws InvalidEmployeeIdException {
 		Employee empToEdit = employeeService.findById(id);
 		ModelAndView modelAndView = new ModelAndView("editEmployee", "empToEdit", empToEdit);
-		//System.out.println("ModelAndView : " + modelAndView);
+		// System.out.println("ModelAndView : " + modelAndView);
 		return modelAndView;
 	}
 
@@ -52,7 +56,7 @@ public class EmployeeController {
 	public ModelAndView updateEmployee(@ModelAttribute("empToEdit") Employee employee)
 			throws InvalidEmployeeIdException {
 		employeeService.update(employee);
-		ModelAndView modelAndView = new ModelAndView("redirect:"+ "getEmp");
+		ModelAndView modelAndView = new ModelAndView("redirect:" + "getEmp");
 		return modelAndView;
 	}
 

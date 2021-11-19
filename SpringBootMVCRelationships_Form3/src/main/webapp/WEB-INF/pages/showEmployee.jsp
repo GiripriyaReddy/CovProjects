@@ -6,11 +6,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>All employee page</title>
+<title>Employee Page</title>
 </head>
 <body>
-	<h2 align="center">Employee Details</h2>
-	<table border="4" bgcolor="lightblue">
+	<h2>Employee Details</h2>
+	<table border="5" bgcolor="white">
 		<tr>
 			<th>ID</th>
 			<th>Name</th>

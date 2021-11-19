@@ -2,15 +2,16 @@
 <%@page import="com.cov.beans.Department"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Show Department</title>
+<title>Department Page</title>
 </head>
 <body>
-	<h2 align="center">Department Details</h2>
-	<table border="4" bgcolor="white">
+	<h2>Department Details</h2>
+	<table border="5" bgcolor="white">
 		<tr>
 			<th>ID</th>
 			<th>Name</th>
@@ -32,6 +33,9 @@
 	<br>
 	<br>
 	<a href="/">Home</a>
+	<br>
+	<br>
+	<a href="regDept">Register For Department</a>
 </body>
 </html>
 
