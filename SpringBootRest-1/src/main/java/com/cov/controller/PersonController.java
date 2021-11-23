@@ -2,6 +2,8 @@
 package com.cov.controller;
 
 import java.util.List;
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,11 +21,16 @@ import com.cov.service.PersonService;
 @RestController
 @RequestMapping("/person")
 public class PersonController {
+	static Logger logger = Logger.getLogger(PersonController.class);
+
 	@Autowired
 	PersonService personService;
 
 	@GetMapping("/{id}")
 	public Person find(@PathVariable int id) throws InvalidPersonIdException {
+		logger.info("Finding a person with id : " + id);
+		Person person = personService.findById(id);
+		logger.debug("Found person is" + person.getFirstName() + " " + person.getLastName());
 		return personService.findById(id);
 	}
 
@@ -34,16 +41,23 @@ public class PersonController {
 
 	@PostMapping()
 	public Person insertPerson(@RequestBody Person person) {
+		logger.info("Finding a person with name : " + person);
+		logger.debug("Inserted person is" + person.getFirstName() + " " + person.getLastName());
 		return personService.insert(person);
 	}
 
 	@PutMapping(" ")
 	public Person edit(@RequestBody Person person) throws InvalidPersonIdException {
+		logger.info("Finding a person with name : " + person);
+		logger.debug("Updated person is" + person.getFirstName() + " " + person.getLastName());
 		return personService.update(person);
 	}
 
 	@DeleteMapping("/{id}")
 	public Person delete(@PathVariable int id) throws InvalidPersonIdException {
+		logger.info("Finding a person with id : " + id);
+		Person person = personService.delete(id);
+		logger.debug("Deleted person is" + id);
 		return personService.delete(id);
 	}
 }

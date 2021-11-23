@@ -1,0 +1,70 @@
+22-11-2021 17:36:53INFO  com.cov.controller.PersonController:31 - Finding a person with id:2
+22-11-2021 17:36:53INFO  com.cov.service.PersonService:30 - Finding person with ID : 2
+22-11-2021 17:36:53INFO  com.cov.service.PersonService:39 - Person found with id 2 is ram charan
+22-11-2021 17:36:53DEBUG com.cov.controller.PersonController:33 - Found person isram charan
+22-11-2021 17:36:53INFO  com.cov.service.PersonService:30 - Finding person with ID : 2
+22-11-2021 17:36:53INFO  com.cov.service.PersonService:39 - Person found with id 2 is ram charan
+22-11-2021 18:04:00INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=hari, lastName=charan]
+22-11-2021 18:04:00DEBUG com.cov.controller.PersonController:45 - Found person ishari charan
+22-11-2021 18:04:11INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=giri, lastName=priya]
+22-11-2021 18:04:11DEBUG com.cov.controller.PersonController:45 - Found person isgiri priya
+22-11-2021 18:04:20INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=hari, lastName=priya]
+22-11-2021 18:04:20DEBUG com.cov.controller.PersonController:45 - Found person ishari priya
+22-11-2021 18:04:34INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=ram, lastName=charan]
+22-11-2021 18:04:34DEBUG com.cov.controller.PersonController:45 - Found person isram charan
+22-11-2021 18:05:09INFO  com.cov.controller.PersonController:58 - Finding a person with id:3
+22-11-2021 18:05:09INFO  com.cov.service.PersonService:59 - Finding person with ID : 3
+22-11-2021 18:05:09DEBUG com.cov.service.PersonService:61 - Person not found with ID : 3
+22-11-2021 18:05:09WARN  com.cov.service.PersonService:63 - com.cov.exception.InvalidPersonIdException: Person ID not found
+22-11-2021 18:05:09INFO  com.cov.service.PersonService:68 - Person found with id 3 is hari priya
+22-11-2021 18:05:09DEBUG com.cov.controller.PersonController:60 - Found person ishari priya
+22-11-2021 18:05:09INFO  com.cov.service.PersonService:59 - Finding person with ID : 3
+22-11-2021 18:05:09DEBUG com.cov.service.PersonService:61 - Person not found with ID : 3
+22-11-2021 18:05:09WARN  com.cov.service.PersonService:63 - com.cov.exception.InvalidPersonIdException: Person ID not found
+22-11-2021 18:06:02INFO  com.cov.controller.PersonController:58 - Finding a person with id:3
+22-11-2021 18:06:02INFO  com.cov.service.PersonService:59 - Finding person with ID : 3
+22-11-2021 18:06:02DEBUG com.cov.service.PersonService:61 - Person not found with ID : 3
+22-11-2021 18:06:02WARN  com.cov.service.PersonService:63 - com.cov.exception.InvalidPersonIdException: Person ID not found
+22-11-2021 18:06:11INFO  com.cov.controller.PersonController:31 - Finding a person with id:3
+22-11-2021 18:06:11INFO  com.cov.service.PersonService:28 - Finding person with ID : 3
+22-11-2021 18:06:11DEBUG com.cov.service.PersonService:31 - Person not found with ID : 3
+22-11-2021 18:06:11WARN  com.cov.service.PersonService:33 - com.cov.exception.InvalidPersonIdException: Person ID not found
+22-11-2021 19:23:44INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=ram, lastName=charan]
+22-11-2021 19:23:44DEBUG com.cov.controller.PersonController:45 - Inserted person isram charan
+22-11-2021 19:23:55INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=hari, lastName=charan]
+22-11-2021 19:23:55DEBUG com.cov.controller.PersonController:45 - Inserted person ishari charan
+22-11-2021 19:24:08INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=giri, lastName=priya]
+22-11-2021 19:24:08DEBUG com.cov.controller.PersonController:45 - Inserted person isgiri priya
+22-11-2021 19:24:26INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=vishnu, lastName=varshith]
+22-11-2021 19:24:26DEBUG com.cov.controller.PersonController:45 - Inserted person isvishnu varshith
+22-11-2021 19:24:41INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=vedanth, lastName=reddy]
+22-11-2021 19:24:41DEBUG com.cov.controller.PersonController:45 - Inserted person isvedanth reddy
+22-11-2021 19:24:50INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=jay, lastName=deep]
+22-11-2021 19:24:50DEBUG com.cov.controller.PersonController:45 - Inserted person isjay deep
+22-11-2021 19:25:02INFO  com.cov.controller.PersonController:44 - Finding a person with name:Person [id=0, firstName=kavya, lastName=reddy]
+22-11-2021 19:25:02DEBUG com.cov.controller.PersonController:45 - Inserted person iskavya reddy
+22-11-2021 19:26:41INFO  com.cov.controller.PersonController:51 - Finding a person with name:Person [id=7, firstName=kavya, lastName=reddy]
+22-11-2021 19:26:41DEBUG com.cov.controller.PersonController:52 - Updated person iskavya reddy
+22-11-2021 19:26:41INFO  com.cov.service.PersonService:46 - Updating person with Name : Person [id=7, firstName=kavya, lastName=reddy]
+22-11-2021 19:26:41DEBUG com.cov.service.PersonService:48 - Person not found with Name : Person [id=7, firstName=kavya, lastName=reddy]
+22-11-2021 19:26:41WARN  com.cov.service.PersonService:50 - com.cov.exception.InvalidPersonIdException: Person name not found
+22-11-2021 19:26:41INFO  com.cov.service.PersonService:54 - Person found with name Person [id=7, firstName=kavya, lastName=reddy] is kavya reddy
+22-11-2021 19:26:59INFO  com.cov.controller.PersonController:51 - Finding a person with name:Person [id=7, firstName=kavya, lastName=reddy VN]
+22-11-2021 19:26:59DEBUG com.cov.controller.PersonController:52 - Updated person iskavya reddy VN
+22-11-2021 19:26:59INFO  com.cov.service.PersonService:46 - Updating person with Name : Person [id=7, firstName=kavya, lastName=reddy VN]
+22-11-2021 19:26:59DEBUG com.cov.service.PersonService:48 - Person not found with Name : Person [id=7, firstName=kavya, lastName=reddy VN]
+22-11-2021 19:26:59WARN  com.cov.service.PersonService:50 - com.cov.exception.InvalidPersonIdException: Person name not found
+22-11-2021 19:26:59INFO  com.cov.service.PersonService:54 - Person found with name Person [id=7, firstName=kavya, lastName=reddy VN] is kavya reddy VN
+22-11-2021 19:27:20INFO  com.cov.controller.PersonController:58 - Finding a person with id:7
+22-11-2021 19:27:20INFO  com.cov.service.PersonService:59 - Deleting person with ID : 7
+22-11-2021 19:27:20DEBUG com.cov.service.PersonService:61 - Person deleted with ID : 7
+22-11-2021 19:27:20WARN  com.cov.service.PersonService:63 - com.cov.exception.InvalidPersonIdException: Person ID not found
+22-11-2021 19:27:20INFO  com.cov.service.PersonService:68 - Person found with id 7 is kavya reddy VN
+22-11-2021 19:27:20DEBUG com.cov.controller.PersonController:60 - Deleted person is7
+22-11-2021 19:27:20INFO  com.cov.service.PersonService:59 - Deleting person with ID : 7
+22-11-2021 19:27:20DEBUG com.cov.service.PersonService:61 - Person deleted with ID : 7
+22-11-2021 19:27:20WARN  com.cov.service.PersonService:63 - com.cov.exception.InvalidPersonIdException: Person ID not found
+22-11-2021 19:27:25INFO  com.cov.controller.PersonController:31 - Finding a person with id:7
+22-11-2021 19:27:25INFO  com.cov.service.PersonService:28 - Finding person with ID : 7
+22-11-2021 19:27:25DEBUG com.cov.service.PersonService:31 - Person not found with ID : 7
+22-11-2021 19:27:25WARN  com.cov.service.PersonService:33 - com.cov.exception.InvalidPersonIdException: Person ID not found
