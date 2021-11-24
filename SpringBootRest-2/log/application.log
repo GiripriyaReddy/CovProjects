@@ -1,0 +1,105 @@
+24-11-2021 14:38:09INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 14:47:45INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 14:58:58INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:18:26INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:19:23INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:19:40INFO  com.cov.controller.DepartmentController:56 - Deleting a department with id 3
+24-11-2021 15:19:40INFO  com.cov.service.DepartmentService:63 - Deleting department with Id : 3
+24-11-2021 15:19:40DEBUG com.cov.service.DepartmentService:65 - Department not found with ID : 3
+24-11-2021 15:19:40WARN  com.cov.service.DepartmentService:68 - com.cov.exception.InvalidDepartmentIdException: Department ID not found
+24-11-2021 15:19:47INFO  com.cov.controller.DepartmentController:30 - Finding an department with id 3
+24-11-2021 15:19:47INFO  com.cov.service.DepartmentService:28 - Finding department with ID : 3
+24-11-2021 15:19:47INFO  com.cov.controller.DepartmentController:32 - Department found with id 3 isBRM
+24-11-2021 15:36:01INFO  com.cov.controller.EmployeeController:35 - finding all employees
+24-11-2021 15:37:08INFO  com.cov.controller.EmployeeController:35 - finding all employees
+24-11-2021 15:41:03INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:43:52INFO  com.cov.controller.DepartmentController:30 - Finding an department with id 1
+24-11-2021 15:43:52INFO  com.cov.service.DepartmentService:28 - Finding department with ID : 1
+24-11-2021 15:43:52INFO  com.cov.controller.DepartmentController:32 - Department found with id 1 isJAVA
+24-11-2021 15:44:56INFO  com.cov.controller.DepartmentController:56 - Deleting a department with id 1
+24-11-2021 15:44:56INFO  com.cov.service.DepartmentService:72 - Deleting department with Id : 1
+24-11-2021 15:44:56DEBUG com.cov.service.DepartmentService:74 - Department not found with ID : 1
+24-11-2021 15:45:22INFO  com.cov.controller.EmployeeController:27 - finding a employee with id 1
+24-11-2021 15:45:22INFO  com.cov.service.EmployeeService:30 - Finding employee with ID : 1
+24-11-2021 15:45:22DEBUG com.cov.service.EmployeeService:33 - Employee not found with ID : 1
+24-11-2021 15:45:22WARN  com.cov.service.EmployeeService:36 - com.cov.exception.InvalidEmployeeIdException: Employee ID not found
+24-11-2021 15:45:22INFO  com.cov.exception.GlobalExceptionHandler:32 - status : 404 NOT_FOUND
+24-11-2021 15:45:22INFO  com.cov.exception.GlobalExceptionHandler:33 - message  null
+24-11-2021 15:45:28INFO  com.cov.controller.EmployeeController:35 - finding all employees
+24-11-2021 15:45:57INFO  com.cov.controller.EmployeeController:53 - deleting a employee with id 1
+24-11-2021 15:45:57INFO  com.cov.service.EmployeeService:66 - Deleting employee with Id : 1
+24-11-2021 15:45:57DEBUG com.cov.service.EmployeeService:68 - Employee not found with ID : 1
+24-11-2021 15:45:57WARN  com.cov.service.EmployeeService:70 - com.cov.exception.InvalidEmployeeIdException: Employee Id not found
+24-11-2021 15:45:57INFO  com.cov.exception.GlobalExceptionHandler:32 - status : 404 NOT_FOUND
+24-11-2021 15:45:57INFO  com.cov.exception.GlobalExceptionHandler:33 - message  Employee Id1not existing in repository
+24-11-2021 15:46:03INFO  com.cov.controller.EmployeeController:53 - deleting a employee with id 4
+24-11-2021 15:46:03INFO  com.cov.service.EmployeeService:66 - Deleting employee with Id : 4
+24-11-2021 15:46:03DEBUG com.cov.service.EmployeeService:68 - Employee not found with ID : 4
+24-11-2021 15:46:03WARN  com.cov.service.EmployeeService:70 - com.cov.exception.InvalidEmployeeIdException: Employee Id not found
+24-11-2021 15:46:14INFO  com.cov.controller.EmployeeController:35 - finding all employees
+24-11-2021 15:48:00INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:48:10INFO  com.cov.controller.DepartmentController:56 - Deleting a department with id 1
+24-11-2021 15:48:10INFO  com.cov.service.DepartmentService:72 - Deleting department with Id : 1
+24-11-2021 15:48:10DEBUG com.cov.service.DepartmentService:74 - Department not found with ID : 1
+24-11-2021 15:50:22INFO  com.cov.controller.DepartmentController:50 - Editing a department with lucky
+24-11-2021 15:50:22INFO  com.cov.service.DepartmentService:48 - Updating employee with Name : Department [id=1, name=lucky]
+24-11-2021 15:50:22DEBUG com.cov.service.DepartmentService:50 - Employee not found with Name : Department [id=1, name=lucky]
+24-11-2021 15:50:22WARN  com.cov.service.DepartmentService:53 - com.cov.exception.InvalidDepartmentIdException: Department  not found
+24-11-2021 15:50:22INFO  com.cov.service.DepartmentService:58 - Department found with name Department [id=1, name=lucky] is 1 lucky
+24-11-2021 15:50:50INFO  com.cov.controller.DepartmentController:44 - Inserting a department with racegurram
+24-11-2021 15:50:50INFO  com.cov.service.DepartmentService:64 - Inserting a new department
+24-11-2021 15:50:50WARN  com.cov.service.DepartmentService:67 - com.cov.exception.InvalidDepartmentIdException: Department id not found
+24-11-2021 15:51:15INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:51:37INFO  com.cov.controller.DepartmentController:56 - Deleting a department with id 2
+24-11-2021 15:51:37INFO  com.cov.service.DepartmentService:72 - Deleting department with Id : 2
+24-11-2021 15:51:37DEBUG com.cov.service.DepartmentService:74 - Department not found with ID : 2
+24-11-2021 15:51:44INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:51:55INFO  com.cov.controller.DepartmentController:56 - Deleting a department with id 1
+24-11-2021 15:51:55INFO  com.cov.service.DepartmentService:72 - Deleting department with Id : 1
+24-11-2021 15:51:55DEBUG com.cov.service.DepartmentService:74 - Department not found with ID : 1
+24-11-2021 15:52:02INFO  com.cov.controller.DepartmentController:30 - Finding an department with id 1
+24-11-2021 15:52:02INFO  com.cov.service.DepartmentService:28 - Finding department with ID : 1
+24-11-2021 15:52:02INFO  com.cov.controller.DepartmentController:32 - Department found with id 1 islucky
+24-11-2021 15:52:39INFO  com.cov.controller.DepartmentController:50 - Editing a department with racegurram
+24-11-2021 15:52:39INFO  com.cov.service.DepartmentService:48 - Updating employee with Name : Department [id=2, name=racegurram]
+24-11-2021 15:52:39DEBUG com.cov.service.DepartmentService:50 - Employee not found with Name : Department [id=2, name=racegurram]
+24-11-2021 15:52:39WARN  com.cov.service.DepartmentService:53 - com.cov.exception.InvalidDepartmentIdException: Department  not found
+24-11-2021 15:52:39INFO  com.cov.service.DepartmentService:58 - Department found with name Department [id=2, name=racegurram] is 2 racegurram
+24-11-2021 15:53:19INFO  com.cov.controller.DepartmentController:50 - Editing a department with giripriya
+24-11-2021 15:53:19INFO  com.cov.service.DepartmentService:48 - Updating employee with Name : Department [id=1, name=giripriya]
+24-11-2021 15:53:19DEBUG com.cov.service.DepartmentService:50 - Employee not found with Name : Department [id=1, name=giripriya]
+24-11-2021 15:53:19WARN  com.cov.service.DepartmentService:53 - com.cov.exception.InvalidDepartmentIdException: Department  not found
+24-11-2021 15:53:19INFO  com.cov.service.DepartmentService:58 - Department found with name Department [id=1, name=giripriya] is 1 giripriya
+24-11-2021 15:53:25INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:53:54INFO  com.cov.controller.DepartmentController:56 - Deleting a department with id 2
+24-11-2021 15:53:54INFO  com.cov.service.DepartmentService:72 - Deleting department with Id : 2
+24-11-2021 15:53:54DEBUG com.cov.service.DepartmentService:74 - Department not found with ID : 2
+24-11-2021 15:54:05INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 15:54:38INFO  com.cov.controller.DepartmentController:50 - Editing a department with giripriya
+24-11-2021 15:54:38INFO  com.cov.service.DepartmentService:48 - Updating employee with Name : Department [id=1, name=giripriya]
+24-11-2021 15:54:38DEBUG com.cov.service.DepartmentService:50 - Employee not found with Name : Department [id=1, name=giripriya]
+24-11-2021 15:54:38WARN  com.cov.service.DepartmentService:53 - com.cov.exception.InvalidDepartmentIdException: Department  not found
+24-11-2021 15:54:38INFO  com.cov.service.DepartmentService:58 - Department found with name Department [id=1, name=giripriya] is 1 giripriya
+24-11-2021 15:56:17INFO  com.cov.controller.EmployeeController:35 - finding all employees
+24-11-2021 15:56:31INFO  com.cov.controller.EmployeeController:35 - finding all employees
+24-11-2021 15:56:39INFO  com.cov.controller.EmployeeController:41 - inserting a employee with giripriya
+24-11-2021 15:56:39INFO  com.cov.service.EmployeeService:79 - Inserting a new employee
+24-11-2021 15:56:39WARN  com.cov.service.EmployeeService:81 - com.cov.exception.InvalidEmployeeIdException: Employee id not found
+24-11-2021 15:56:52INFO  com.cov.controller.EmployeeController:41 - inserting a employee with giripriya
+24-11-2021 15:56:52INFO  com.cov.service.EmployeeService:79 - Inserting a new employee
+24-11-2021 15:56:52WARN  com.cov.service.EmployeeService:81 - com.cov.exception.InvalidEmployeeIdException: Employee id not found
+24-11-2021 15:57:07INFO  com.cov.controller.EmployeeController:35 - finding all employees
+24-11-2021 15:57:27INFO  com.cov.controller.EmployeeController:53 - deleting a employee with id 5
+24-11-2021 15:57:27INFO  com.cov.service.EmployeeService:66 - Deleting employee with Id : 5
+24-11-2021 15:57:27DEBUG com.cov.service.EmployeeService:68 - Employee not found with ID : 5
+24-11-2021 15:57:27WARN  com.cov.service.EmployeeService:70 - com.cov.exception.InvalidEmployeeIdException: Employee Id not found
+24-11-2021 16:19:02INFO  com.cov.controller.EmployeeController:35 - Finding all employees
+24-11-2021 16:19:32INFO  com.cov.controller.EmployeeController:41 - Inserting an employee with giripriya
+24-11-2021 16:19:32INFO  com.cov.service.EmployeeService:79 - Inserting a new employee
+24-11-2021 16:19:32WARN  com.cov.service.EmployeeService:81 - com.cov.exception.InvalidEmployeeIdException: Employee id not found
+24-11-2021 16:20:21INFO  com.cov.controller.EmployeeController:35 - Finding all employees
+24-11-2021 16:20:40INFO  com.cov.controller.EmployeeController:53 - Deleting an employee with id 9
+24-11-2021 16:20:40INFO  com.cov.service.EmployeeService:66 - Deleting employee with Id : 9
+24-11-2021 16:20:40DEBUG com.cov.service.EmployeeService:68 - Employee not found with ID : 9
+24-11-2021 16:20:40WARN  com.cov.service.EmployeeService:70 - com.cov.exception.InvalidEmployeeIdException: Employee Id not found
+24-11-2021 16:20:54INFO  com.cov.controller.EmployeeController:35 - Finding all employees

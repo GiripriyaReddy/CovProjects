@@ -68,3 +68,25 @@
 22-11-2021 19:27:25INFO  com.cov.service.PersonService:28 - Finding person with ID : 7
 22-11-2021 19:27:25DEBUG com.cov.service.PersonService:31 - Person not found with ID : 7
 22-11-2021 19:27:25WARN  com.cov.service.PersonService:33 - com.cov.exception.InvalidPersonIdException: Person ID not found
+23-11-2021 17:56:56INFO  com.cov.controller.PersonController:31 - Finding a person with id : 2
+23-11-2021 17:56:56INFO  com.cov.service.PersonService:26 - Finding person with ID : 2
+23-11-2021 17:56:56DEBUG com.cov.service.PersonService:29 - Person not found with ID : 2
+23-11-2021 17:56:56WARN  com.cov.service.PersonService:31 - com.cov.exception.InvalidPersonIdException: Person ID not found
+23-11-2021 17:56:56INFO  com.cov.exception.GlobalExceptionHandler:26 - status : 404 NOT_FOUND
+23-11-2021 17:56:56INFO  com.cov.exception.GlobalExceptionHandler:27 - message  null
+23-11-2021 17:57:05INFO  com.cov.controller.PersonController:31 - Finding a person with id : 2
+23-11-2021 17:57:05INFO  com.cov.service.PersonService:26 - Finding person with ID : 2
+23-11-2021 17:57:05DEBUG com.cov.service.PersonService:29 - Person not found with ID : 2
+23-11-2021 17:57:05WARN  com.cov.service.PersonService:31 - com.cov.exception.InvalidPersonIdException: Person ID not found
+23-11-2021 17:57:05INFO  com.cov.exception.GlobalExceptionHandler:26 - status : 404 NOT_FOUND
+23-11-2021 17:57:05INFO  com.cov.exception.GlobalExceptionHandler:27 - message  null
+23-11-2021 18:10:07INFO  com.cov.controller.PersonController:31 - Finding a person with id : 2
+23-11-2021 18:10:07INFO  com.cov.service.PersonService:26 - Finding person with ID : 2
+23-11-2021 18:10:07DEBUG com.cov.service.PersonService:29 - Person not found with ID : 2
+23-11-2021 18:10:07WARN  com.cov.service.PersonService:31 - com.cov.exception.InvalidPersonIdException: Person ID not found
+23-11-2021 18:10:07INFO  com.cov.exception.GlobalExceptionHandler:26 - status : 404 NOT_FOUND
+23-11-2021 18:10:07INFO  com.cov.exception.GlobalExceptionHandler:27 - message  null
+23-11-2021 18:11:16INFO  com.cov.controller.PersonController:44 - Finding a person with name : Person [id=0, firstName=giri, lastName=pri]
+23-11-2021 18:11:16DEBUG com.cov.controller.PersonController:45 - Inserted person isgiri pri
+23-11-2021 18:11:28INFO  com.cov.controller.PersonController:44 - Finding a person with name : Person [id=0, firstName=giriiiii, lastName=priyaaaa]
+23-11-2021 18:11:28DEBUG com.cov.controller.PersonController:45 - Inserted person isgiriiiii priyaaaa
