@@ -25,17 +25,16 @@ class DepartmentServiceTest {
 	DepartmentService departmentService;
 	@Mock
 	DepartmentRepository departmentRepository;
-
 	@BeforeAll
 	public void init() {
 		MockitoAnnotations.initMocks(this);
 		List<Department> departments = new ArrayList<>();
-		departments.add(new Department(1, "java"));
-		departments.add(new Department(2, "c"));
+		departments.add(new Department(1, "Java"));
+		departments.add(new Department(2, "C"));
 		departments.add(new Department(3, "HR"));
 		departments.add(new Department(4, "BRM"));
 		when(departmentRepository.findAll()).thenReturn(departments);
-		Department departmentExisting = new Department(3, "HR");
+		Department departmentExisting = new Department(2, "python");
 		when(departmentRepository.findById(2)).thenReturn(Optional.of(departmentExisting));
 	}
 
@@ -69,12 +68,12 @@ class DepartmentServiceTest {
 
 	@Test
 	void testUpdate() {
-		Department department = new Department(4, "BRM");
+		Department department = new Department(4, "testing");
 		when((departmentRepository.findById(department.getId()))).thenReturn(Optional.of(department));
 		when(departmentRepository.save(department)).thenReturn(department);
 		Department d = departmentRepository.save(department);
 		assertNotNull(d);
-		assertSame(d.getName(), "BRM");
+		assertSame(d.getName(), "testing");
 		assertEquals(d.getId(), 4);
 	}
 

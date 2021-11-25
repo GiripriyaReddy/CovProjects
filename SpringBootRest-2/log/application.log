@@ -103,3 +103,45 @@
 24-11-2021 16:20:40DEBUG com.cov.service.EmployeeService:68 - Employee not found with ID : 9
 24-11-2021 16:20:40WARN  com.cov.service.EmployeeService:70 - com.cov.exception.InvalidEmployeeIdException: Employee Id not found
 24-11-2021 16:20:54INFO  com.cov.controller.EmployeeController:35 - Finding all employees
+24-11-2021 16:52:12INFO  com.cov.controller.EmployeeController:41 - Inserting an employee with giripriya
+24-11-2021 16:52:12INFO  com.cov.service.EmployeeService:79 - Inserting a new employee
+24-11-2021 16:52:12WARN  com.cov.service.EmployeeService:81 - com.cov.exception.InvalidEmployeeIdException: Employee id not found
+24-11-2021 16:53:51INFO  com.cov.controller.EmployeeController:47 - Editing an employee with giripriya
+24-11-2021 16:53:51INFO  com.cov.service.EmployeeService:51 - Updating employee with Name : Employee [id=0, name=giripriya, department=null]
+24-11-2021 16:53:51DEBUG com.cov.service.EmployeeService:53 - Employee not found with Name : Employee [id=0, name=giripriya, department=null]
+24-11-2021 16:53:51WARN  com.cov.service.EmployeeService:56 - com.cov.exception.InvalidEmployeeIdException: Employee name not found
+24-11-2021 16:53:51INFO  com.cov.exception.GlobalExceptionHandler:32 - status : 404 NOT_FOUND
+24-11-2021 16:53:51INFO  com.cov.exception.GlobalExceptionHandler:33 - message  Employee Id0not existing in reposiotory
+24-11-2021 16:54:09INFO  com.cov.controller.EmployeeController:47 - Editing an employee with giri
+24-11-2021 16:54:09INFO  com.cov.service.EmployeeService:51 - Updating employee with Name : Employee [id=0, name=giri, department=null]
+24-11-2021 16:54:09DEBUG com.cov.service.EmployeeService:53 - Employee not found with Name : Employee [id=0, name=giri, department=null]
+24-11-2021 16:54:09WARN  com.cov.service.EmployeeService:56 - com.cov.exception.InvalidEmployeeIdException: Employee name not found
+24-11-2021 16:54:09INFO  com.cov.exception.GlobalExceptionHandler:32 - status : 404 NOT_FOUND
+24-11-2021 16:54:09INFO  com.cov.exception.GlobalExceptionHandler:33 - message  Employee Id0not existing in reposiotory
+24-11-2021 16:54:44INFO  com.cov.controller.EmployeeController:47 - Editing an employee with giri
+24-11-2021 16:54:44INFO  com.cov.service.EmployeeService:51 - Updating employee with Name : Employee [id=0, name=giri, department=null]
+24-11-2021 16:54:44DEBUG com.cov.service.EmployeeService:53 - Employee not found with Name : Employee [id=0, name=giri, department=null]
+24-11-2021 16:54:44WARN  com.cov.service.EmployeeService:56 - com.cov.exception.InvalidEmployeeIdException: Employee name not found
+24-11-2021 16:54:44INFO  com.cov.exception.GlobalExceptionHandler:32 - status : 404 NOT_FOUND
+24-11-2021 16:54:44INFO  com.cov.exception.GlobalExceptionHandler:33 - message  Employee Id0not existing in reposiotory
+24-11-2021 16:59:46INFO  com.cov.controller.EmployeeController:35 - Finding all employees
+24-11-2021 17:00:13INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 17:00:38INFO  com.cov.controller.EmployeeController:35 - Finding all employees
+24-11-2021 17:07:55INFO  com.cov.controller.EmployeeController:35 - Finding all employees
+24-11-2021 17:16:50INFO  com.cov.controller.DepartmentController:38 - Find all departments
+24-11-2021 17:45:58INFO  com.cov.controller.EmployeeController:35 - Finding all employees
+24-11-2021 17:46:46INFO  com.cov.controller.EmployeeController:27 - Finding an employee with id 8
+24-11-2021 17:46:46INFO  com.cov.service.EmployeeService:30 - Finding employee with ID : 8
+24-11-2021 17:46:46INFO  com.cov.controller.EmployeeController:29 - Employee found with id 8 ischaran
+24-11-2021 17:46:52INFO  com.cov.controller.EmployeeController:27 - Finding an employee with id 6
+24-11-2021 17:46:52INFO  com.cov.service.EmployeeService:30 - Finding employee with ID : 6
+24-11-2021 17:46:52DEBUG com.cov.service.EmployeeService:33 - Employee not found with ID : 6
+24-11-2021 17:46:52WARN  com.cov.service.EmployeeService:36 - com.cov.exception.InvalidEmployeeIdException: Employee ID not found
+24-11-2021 17:46:52INFO  com.cov.exception.GlobalExceptionHandler:32 - status : 404 NOT_FOUND
+24-11-2021 17:46:52INFO  com.cov.exception.GlobalExceptionHandler:33 - message  null
+25-11-2021 12:07:03INFO  com.cov.controller.DepartmentController:37 - Finding an department with id 3
+25-11-2021 12:07:03INFO  com.cov.service.DepartmentService:28 - Finding department with ID : 3
+25-11-2021 12:07:04INFO  com.cov.controller.DepartmentController:39 - Department found with id 3 isBRM
+25-11-2021 12:09:08INFO  com.cov.controller.EmployeeController:35 - Finding a employee with id 8
+25-11-2021 12:09:08INFO  com.cov.service.EmployeeService:30 - Finding employee with ID : 8
+25-11-2021 12:09:08INFO  com.cov.controller.EmployeeController:37 - employee found with id 8 ischaran

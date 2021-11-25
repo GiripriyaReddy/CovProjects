@@ -42,7 +42,7 @@ class EmployeeServiceTest {
 		employee.add(new Employee(4, "charan", department4));
 		when(employeeRepository.findAll()).thenReturn(employee);
 		Employee employeeExisting = new Employee(3, "hari", department3);
-		when(employeeRepository.findById(2)).thenReturn(Optional.of(employeeExisting));
+		when(employeeRepository.findById(3)).thenReturn(Optional.of(employeeExisting));
 	}
 
 	@Test
@@ -56,7 +56,7 @@ class EmployeeServiceTest {
 	@Test
 	void testFindById() {
 
-		Employee employee = employeeRepository.findById(2).get();
+		Employee employee = employeeRepository.findById(3).get();
 		assertNotNull(employee);
 		assertSame(employee.getName(), "hari");
 
@@ -76,7 +76,7 @@ class EmployeeServiceTest {
 
 	@Test
 	void testUpdate() {
-		Department department4 = new Department(4, "CRM");
+		Department department4 = new Department(4, "BRM");
 		Employee employee = new Employee(4, "charan", department4);
 		when((employeeRepository.findById(employee.getId()))).thenReturn(Optional.of(employee));
 		when(employeeRepository.save(employee)).thenReturn(employee);
